@@ -4,6 +4,7 @@ import 'dart:math';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.green.shade900,
         appBar: AppBar(backgroundColor: Colors.green.shade900),
