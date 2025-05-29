@@ -26,7 +26,7 @@ class DicePage extends StatelessWidget {
             width: 150.0,
             child: TextButton(
               onPressed: () {},
-              child: Image(image: AssetImage('assets/images/dice1.png')),
+              child: Image.asset('assets/images/dice1.png'),
             ),
           ),
         ],
