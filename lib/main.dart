@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(
@@ -23,6 +24,19 @@ class DicePage extends StatefulWidget {
 
 class _DicePageState extends State<DicePage> {
   var diceNum = 1;
+  final player = AudioPlayer(); // AudioPlayer instance
+
+  void rollDice() async {
+    setState(() {
+      diceNum = Random().nextInt(6) + 1;
+    });
+
+    // play sound
+    await player.play(AssetSource('audio/dice-142528.mp3'));
+
+    print('$diceNum btn is pressed.');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -48,13 +62,7 @@ class _DicePageState extends State<DicePage> {
               style: TextButton.styleFrom(
                 foregroundColor: Colors.green.shade900,
               ),
-              onPressed: () {
-                setState(() {
-                  diceNum = Random().nextInt(6) + 1;
-                });
-                // diceNum ++;
-                print('$diceNum btn is pressed');
-              },
+              onPressed: rollDice,
               child: Image.asset('assets/images/dice$diceNum.png'),
             ),
           ),
