@@ -17,6 +17,17 @@ class DicePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: [
+        Container(
+          height: 150.0,
+          width: 150.0,
+          child: TextButton(onPressed: () {
+
+          }, 
+          child: Image(image: image)),
+        )
+      ],
+    );
   }
 }
