@@ -57,7 +57,16 @@ class _DicePageState extends State<DicePage> {
               child: Image.asset('assets/images/dice$diceNum.png'),
             ),
           ),
-          Text('Result test!'),
+          Container(
+            child: Text(
+              'Your Lucky Dices: $diceNum',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
         ],
       ),
     );
