@@ -1,16 +1,21 @@
 # dice_app
 
-A new Flutter project.
+A simple and fun Flutter app that simulates a **dice roll** 🧊🎲.  
+This app includes a **dice image** that changes on tap, along with **sound effects** to enhance the user experience.
+
+## 📱 Screenshot
+
+<img src="screenshot/Screenshot_1748500323.png" alt="Dice App Screenshot" width="300"/>
+
+> *(Make sure to save your screenshot as `dice_app_screenshot.png` inside a folder named `screenshots` in your project directory.)*
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for learning Flutter development.
 
-A few resources to get you started if this is your first Flutter project:
+Resources to help you get started:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For more guidance, visit the [official Flutter documentation](https://docs.flutter.dev/) for tutorials, samples, and API references.
